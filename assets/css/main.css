@@ -1718,8 +1718,15 @@ input, select, textarea {
   }
 }
 
-#project1 .image.main img {
-    max-width: 100%; /* Ajusta à largura da página */
+.project-graphs img {
+    max-width: 45%;   /* cada gráfico ocupa menos da metade */
     height: auto;
+    display: inline-block;
+    margin-right: 5%; /* espaço entre eles */
 }
+.project-graphs img:last-child {
+    margin-right: 0;  /* remove margem do último */
+}
+
+
 
