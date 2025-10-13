@@ -1140,9 +1140,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1656,3 +1659,43 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+/* ===== Ajustes personalizados para projetos ===== */
+
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* dois projetos lado a lado */
+  gap: 2rem; /* espaço entre os projetos */
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 0.5rem; /* reduz espaço entre título e texto */
+}
+
+.project-card p {
+  margin-bottom: 1.2rem; /* reduz espaço antes do botão */
+}
+
+.project-card .button {
+  margin-top: 0;
+}
+
+/* Ajuste para ecrãs pequenos */
+@media (max-width: 900px) {
+  .projects-list {
+    grid-template-columns: 1fr; /* empilha em ecrãs pequenos */
+  }
+}
