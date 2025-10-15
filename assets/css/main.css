@@ -1728,16 +1728,6 @@ input, select, textarea {
     margin-right: 0;  /* remove margem do último */
 }
 
-article {
-  padding: 20px 30px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-p {
-  margin-bottom: 1em;
-  line-height: 1.6;
-}
 
 
 
